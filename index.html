@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5b880ae757.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="project_7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+        <h1>Todo List</h1>
+        <div class="input-section">
+            <input class="task-input" type="text" placeholder="Wpisz treść zadania...">
+            <button class="add-button">Dodaj</button>
+        </div>
+    </div>
+        <div class="tasks-section">
+            <h2>Lista zadań</h2>
+            <p class="error-info"></p>
+            <ul class="tasks-list">
+                <li class="name-task">test</li>
+                <div class="tools">
+                    <button class="btn-tools done-button"><i class="fas fa-check"></i></button>
+                    <button class="btn-tools edit-button">edit</button>
+                    <button class="btn-tools remove-button"><i class="fas fa-times"></i></button>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="popup-edit">
+        <h2>Edytuj zadanie</h2>
+        <p class="popup-info"></p>
+        <input class="popup-input" type="text" placeholder="Wprowadź nową treść zadania...">
+        <div class="section-buttons">
+            <button class="accept">Zatwierdź</button>
+            <button class="cancel">Anuluj</button>
+        </div>
+    </div>
+
+</body>

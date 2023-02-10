@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    width: 800px; 
+    height: 100vh;
+    margin-top: 50px;
+
+}
+.header {
+    background-color: rgb(55, 130, 133);
+    padding: 20px 0 30px;
+    border-radius: 20px 20px 0 0;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 10px 0 20px;
+}
+
+.task-input,
+.popup-input {
+    width: 500px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid rgb(219, 219, 199);
+    background-color: #f9f9f9;;
+    color: black;
+    border-radius: 10px;
+}
+
+.add-button,
+.section-buttons button {
+    min-width: 100px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+    border: 1px solid rgb(219, 219, 199);
+    background-color: #f9f9f9;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.add-button:hover,
+.section-buttons button:hover {
+    background-color: rgb(216, 240, 241)
+}
+
+
+.tasks-section {
+    background-color: rgb(216, 240, 241);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+h2 {
+    font-size: 35px; 
+    padding: 10px;
+}
+
+.tasks-list {
+    display: flex;
+    padding: 20px;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.tools {
+    display: inline-block;
+}
+
+.btn-tools {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.done-button {
+    color: green;
+}
+
+.edit-button {
+    color: rgb(50, 38, 117);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.remove-button {
+    color: red;
+}
+
+
+
+.popup-edit {
+    display: block;
+    background-color: rgb(192, 110, 110);
+    padding: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    bottom: 100px;
+}
+
+.popup-input {
+    margin: 20px;
+}
