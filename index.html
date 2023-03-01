@@ -7,34 +7,23 @@
     <title>Todo list</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5b880ae757.js" crossorigin="anonymous"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Nunito:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
-
     <div class="wrapper">
         <div class="header">
         <h1>Todo List</h1>
-        <div class="input-section">
             <input class="task-input" type="text" placeholder="Wpisz treść zadania...">
             <button class="add-button">Dodaj</button>
-        </div>
     </div>
-        <div class="tasks-section">
-            <h2>Lista zadań</h2>
-            <p class="error-info"></p>
-            <ul class="tasks-list">
-                <li class="name-task">test</li>
-                <div class="tools">
-                    <button class="btn-tools done-button"><i class="fas fa-check"></i></button>
-                    <button class="btn-tools edit-button">edit</button>
-                    <button class="btn-tools remove-button"><i class="fas fa-times"></i></button>
-                </div>
-            </ul>
-        </div>
+    <div class="todolist">
+        <h2>Lista zadań:</h2>
+        <p class="error-info"></p>
+        <ul></ul>
+    </div>
     </div>
 
     <div class="popup-edit">
@@ -46,7 +35,6 @@
             <button class="cancel">Anuluj</button>
         </div>
     </div>
-
-
+    
     <script src="script.js"></script>
 </body>
