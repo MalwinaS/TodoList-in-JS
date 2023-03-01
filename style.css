@@ -60,10 +60,18 @@ h1 {
 }
 
 
-.tasks-section {
+.todolist {
     background-color: rgb(216, 240, 241);
     padding: 20px;
     border-radius: 0 0 20px 20px;
+}
+
+.todolist li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    list-style: none;
+    font-size: 20px;
 }
 
 h2 {
@@ -71,19 +79,11 @@ h2 {
     padding: 10px;
 }
 
-.tasks-list {
-    display: flex;
-    padding: 20px;
-    list-style: none;
-    justify-content: space-between;
-    font-size: 20px;
-}
-
 .tools {
     display: inline-block;
 }
 
-.btn-tools {
+.todolist button {
     padding: 10px;
     margin-right: 10px;
     background-color: transparent;
@@ -93,6 +93,11 @@ h2 {
 
 .done-button {
     color: green;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: gray;
 }
 
 .edit-button {
